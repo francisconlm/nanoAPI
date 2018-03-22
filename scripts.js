@@ -165,7 +165,7 @@ requestETH2.onload = function () {
  	var dataETH21 = JSON.parse(this.response);
 	if (requestETH21.status >= 200 && requestETH21.status < 400) {    
 		const pETH2 = document.createElement('p');
-		pETH2.textContent = "Daily Reward: "+dataETH21.data.day.coins+" ETC";    
+		pETH2.textContent = "Daily Reward: "+dataETH21.data.day.coins+" ETH";    
 		card2.appendChild(pETH2);	  
 	} else {
 		const errorMessage = document.createElement('marquee');
@@ -216,7 +216,7 @@ requestETH4.onload = function () {
   if (requestETH4.status >= 200 && requestETH4.status < 400) {
 
     const pETH4 = document.createElement('p');
-    pETH4.textContent = "Balance: "+dataETH4.data+" ETC";
+    pETH4.textContent = "Balance: "+dataETH4.data+" ETH";
 
     card2.appendChild(pETH4);
 	  
